@@ -125,3 +125,36 @@ for X in testDict.values():
     print(X)
     
 
+# Copy Dictionaries
+# We use a copy() method to copy dictionaries on to others.
+
+new_testDict = testDict.copy()
+print(new_testDict)
+
+# You can also use the dict() method as shown
+
+newer_testDict = dict(testDict) 
+print(newer_testDict)
+
+# Nested Dictionaries
+
+all_Data = {
+    "buyer1" :{
+    "car" : "Honda Fit",
+    "Deposit": 35000
+},
+"buyer2" : {
+    "car" : "Honda Vessel",
+    "Deposit": 60000
+},
+"buyer3" : {
+    "car" : "Passo",
+    "Deposit": 100000
+}  
+}
+
+print(all_Data)
+
+# Access Items in Nested Dictionaries
+
+print(all_Data["buyer1"]["car"])
